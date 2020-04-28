@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Pagina Inicial{% endblock %}
+{% block content %}
+<section>
+    <header class="main">
+        <h2>Menu principal</h2>
+    </header>
+
+    <p>Bienvenido a la paguina inicial de MSX, donde podras encontrar informacion de una gran cariedad de videojuegos de MSX. A continuacion si deseas ver los juegos disponibles en la pagina, haga click en el icono de abajo.</p>
+
+    <div class="image main">
+        <a href="/juegos"><img src="{{url_for('static', filename='img/msx_logo.png')}}" alt="Logotipo MSX"/></a>
+    </div>
+    <hr class="major" />
+</section>
+{% endblock %}
