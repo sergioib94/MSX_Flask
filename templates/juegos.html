@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Pagina Inicial{% endblock %}
+{% block content %}
+<section>
+    <header class="main">
+        <h2>Juegos</h2>
+    </header>
+    <form id="request" class="main_form" action="/listajuegos" method="POST">
+        <input class="contactus" placeholder="Nombre del juego" type="text" name="name"> 
+        <button class="send_btn">Enviar</button>
+    </form>
+</section>
+{% endblock %}
